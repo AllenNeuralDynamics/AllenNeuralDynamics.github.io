@@ -4,7 +4,7 @@
 
 ## Molecular Anatomy
 
-[Scientist I - Machine Learning in Circuit Tracing](https://alleninstitute.hrmdirect.com/employment/job-opening.php?req=1679008)
+[Scientist I - Machine Learning in Circuit Tracing](https://alleninstitute.hrmdirect.com/employment/job-opening.php?req=1679008)</br>
 This Scientist will work with other quantitative and experimental scientists on high-priority problems in neuronal reconstruction and analysis that include (i) topology-preserving approaches to neuronal segmentation, (ii) deep learning-based analysis of morpho-molecular datasets, and (iii) high performance computing.  
 
 [Scientist I – Multi-regional neural circuits, Thalamus anatomy](https://alleninstitute.hrmdirect.com/employment/job-opening.php?req=1835514)

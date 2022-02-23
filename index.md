@@ -43,6 +43,9 @@ This software engineer to help understand the brain-wide connectivity of neurons
 [Scientist - Applied Statistics and Machine Learning](https://alleninstitute.hrmdirect.com/employment/job-opening.php?req=1880667) <br>
 This computational scientist will model peta-scale, multimodal neuroscientific data collected on cutting-edge data generation platforms. Potential projects include: 1) building detailed maps of brain structures based on single-cell transcriptomic profiles; 2) refining these maps based on high-throughput measurements of morphology and connectivity; 3) linking these maps with cell type-specific measurements of neural activity during behavior.      
 
+[Software Engineer I – Neurophysiology Software](https://alleninstitute.hrmdirect.com/employment/job-opening.php?req=1940796&&cust_sort1=29268&&nohd#job) <br>
+This software engineer will collaborate closely with computational scientists to accelerate the collection, processing and analysis of large-scale neurophysiology data. They will bring engineering best practices to scientific software development to ensure our data pipelines are sustainable and reproducible. You'll work with an exciting, dynamic team to build open source software analysis and visualization software that will be used not just in our institute but also by the broader neuroscience community.      
+
 ## Instrumentation
 [Embedded Systems Engineer](https://alleninstitute.hrmdirect.com/employment/job-opening.php?req=1844918) <br>
 This engineer will address challenges related to data acquisition, behavioral control, and automation in our experiments. He or she will interface closely with scientists and other engineers to design, implement, and maintain the hardware, software, and firmware comprising these systems. 

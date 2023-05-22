@@ -4,6 +4,6 @@ The Allen Institute for Neural Dynamics explores the brain’s activity, at the 
 
 We have two cloud buckets publicly available:
 * ![aind-benchmark-data/ephys-compression]({% link data.md %})
-* ![aind-open-data]({% link data.md })
+* ![aind-open-data]({% link data.md %})
 
 To view any available open positions, please go [here]({% link positions.md %}).

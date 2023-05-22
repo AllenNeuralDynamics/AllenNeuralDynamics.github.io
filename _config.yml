@@ -4,3 +4,5 @@ description:
 github_username: AllenNeuralDynamics
 author: Contact
 email: neural.dynamics@alleninstitute.org
+minima:
+  skin: auto

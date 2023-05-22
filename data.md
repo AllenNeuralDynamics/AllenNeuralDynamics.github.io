@@ -14,11 +14,11 @@ All data is stored here: `s3://aind-open-data`
 ### Bucket Organization
 AIND’s mission to share data early with full reproducibility has significant implications on how data and metadata should be organized and represented. Organizational principles include:
 
-* Immutability: once data is collected it should not be touched to ensure reproducibility.
-* Metadata Accessibility: metadata must be trivial to find and read for humans and machines.
-* Cloud Compatibility: data should be stored in cloud-friendly formats.
+* **Immutability**: once data is collected it should not be touched to ensure reproducibility.
+* **Metadata Accessibility**: metadata must be trivial to find and read for humans and machines.
+* **Cloud Compatibility**: data should be stored in cloud-friendly formats.
 
-Based on these principles, s3://aind-open-data is organized as a flat list of data assets, where a data asset is simply a logical collection of files. Derived data assets are separate from their source assets, meaning they are not stored in the same path or directory.
+Based on these principles, `s3://aind-open-data` is organized as a flat list of data assets, where a data asset is simply a logical collection of files. Derived data assets are separate from their source assets, meaning they are not stored in the same path or directory.
 
 Inspired by BIDS and the HCA metadata schema, metadata describing a data asset is stored as sidecar JSON files that live adjacent to the data they describe. These JSON files conform to the schemas defined in aind-data-schema.
 

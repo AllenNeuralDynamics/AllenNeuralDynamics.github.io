@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AIND Positions
+title: Positions
 ---
 
 # Available positions

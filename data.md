@@ -1,6 +1,6 @@
 ---
 layout: page
-title: AIND Data
+title: Data
 ---
 
 # Available Data

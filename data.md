@@ -20,7 +20,7 @@ AIND’s mission to share data early with full reproducibility has significant i
 
 Based on these principles, `s3://aind-open-data` is organized as a flat list of data assets, where a data asset is simply a logical collection of files. Derived data assets are separate from their source assets, meaning they are not stored in the same path or directory.
 
-Inspired by BIDS and the HCA metadata schema, metadata describing a data asset is stored as sidecar JSON files that live adjacent to the data they describe. These JSON files conform to the schemas defined in aind-data-schema.
+Inspired by [BIDS](https://bids-specification.readthedocs.io/en/stable/) and the [HCA metadata schema](https://data.humancellatlas.org/metadata/structure), metadata describing a data asset is stored as sidecar JSON files that live adjacent to the data they describe. These JSON files conform to the schemas defined in [aind-data-schema](https://github.com/allenNeuralDynamics/aind-data-schema/).
 
 As soon as possible, data in this bucket are stored in cloud-friendly formats, including NWB-Zarr for physiology and OME-Zarr for imaging. We aspire to produce data in these formats at the time of acquisition.
 

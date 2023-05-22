@@ -67,7 +67,9 @@ A spike-sorting result asset would look like this:
 
 ### aind-benchmark-data/ephys-compression
 
-Extracellular electrophysiology data is growing at a remarkable pace. This data, collected neuropixels probes by the Allen Institute and the International Brain Lab can be used to benchmark throughput rates and storage ratios of various data compression algorithms.
+Extracellular electrophysiology data is growing at a remarkable pace. This data, collected neuropixels probes by the Allen Institute and the International Brain Lab can be used to benchmark throughput rates and storage ratios of various data compression algorithms. 
+
+All data is available within the `aind-benchmark-data` bucket at `s3://aind-benchmark-data/ephys-compression`.
 
 
 

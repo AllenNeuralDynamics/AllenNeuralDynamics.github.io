@@ -9,7 +9,7 @@ The Allen Institute for Neural Dynamics (AIND) is committed to FAIR, Open, and R
 
 In addition to sharing curated datasets with modality-specific NIH data archives like DANDI and BIL, we are also excited to share all of our data in one public S3 bucket generously hosted by the Registry of Open Data on AWS. 
 
-All data is stored here: s3://aind-open-data.
+All data is stored here: `s3://aind-open-data`
 
 ### Bucket Organization
 AIND’s mission to share data early with full reproducibility has significant implications on how data and metadata should be organized and represented. Organizational principles include:

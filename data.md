@@ -106,3 +106,44 @@ recording_gt, sorting_gt = se.read_mearec("{local-path-to-aind-benchmark-data/ep
 ```
 
 `recording_gt` is also [`spikeinterface.BaseRecording`](https://spikeinterface.readthedocs.io/en/latest/api.html#spikeinterface.core.BaseRecording) object. `sorting_gt` is a [`spikeinterface.BaseSorting`](https://spikeinterface.readthedocs.io/en/latest/api.html#spikeinterface.core.BaseSorting) containing the ground-truth spiking data.
+
+### aind-benchmark-data/ephys-hybrid-evaluation
+
+Evaluation of spike sorting methods is a challenging task, as it requires both ground-truth data and a variety of sorting algorithms to compare against. The `aind-benchmark-data/ephys-hybrid-evaluation` bucket contains a set of hybrid datasets specifically designed for benchmarking spike sorting methods.
+
+All data is available within the `aind-benchmark-data` bucket at `s3://aind-benchmark-data/ephys-hybrid-evaluation`.
+
+The datasets are used in the [Cloud-compatible pipelines for processing and evaluating large-scale electrophysiology data](). There are two subfolders, corresponding to the two applications used in the paper:
+
+- `sorters`: used for comparison between `Kilosort2.5` and `Kilosort4`
+- `lossy`: used for comparison between lossless and lossy compression (using [WavPack](www.wavpack.com))
+
+For each application, there are two subfolders, one for Neuropixels 1.0 (`np1`) data and one for Neuropixels 2.0 - 4 shank (`np2`) data. Each subfolder contains hybrid datasets from multiple sessions, with the following structure:
+
+```
+    <application>/<np1|np2>/<session-id>/<recording-id>/
+        recording.zarr/
+        sorting.zarr/
+```
+
+For Neuropixels 2.0, the different shanks (or groups) are split into separate recording ids.
+The last part of the path is the recording id, `_{i}` is the hybrid case: for each dataset and probe,
+5 cases with randomly sampled hybrid units are available.
+
+Recordings and sortings can be easily loaded using the `spikeinterface` library (version 0.102.3 or later).
+
+The following code loads session id: `ecephys_644864_2023-01-31_15-27-43`, recording id: `experiment1_Record Node 110#Neuropix-PXI-107.ProbeA-AP_recording1_0/`:
+
+```
+import spikeinterface as si
+
+session_id = "ecephys_644864_2023-01-31_15-27-43"
+recording_id = "experiment1_Record Node 110#Neuropix-PXI-107.ProbeA-AP_recording1_0"
+
+sorting = si.load(
+    f"s3://aind-benchmark-data/ephys-hybrid-evaluation/sorters/np1/{session_id}/{recording_id}/sorting.zarr"
+)
+recording = si.load(
+    f"s3://aind-benchmark-data/ephys-hybrid-evaluation/sorters/np1/{session_id}/{recording_id}/recording.zarr"
+)
+```

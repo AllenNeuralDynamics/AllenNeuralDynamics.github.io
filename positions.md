@@ -1,7 +1,3 @@
 ---
-layout: page
-title: Positions
+redirect_to: https://docs.allenneuraldynamics.org/
 ---
-
-# Available positions
-

@@ -6,3 +6,5 @@ author: Contact
 email: neural.dynamics@alleninstitute.org
 minima:
   skin: auto
+plugins:
+  - jekyll-redirect-from
